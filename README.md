@@ -130,5 +130,3 @@ Terminal
 Localstack
 
 ![Screenshot 2024-10-08 at 12 07 02](https://github.com/user-attachments/assets/d8ab0484-fb99-4e4d-a705-29718405039a)
-
-
