@@ -1,6 +1,6 @@
 # Localstack demo
 ## Overview
-The purpose of this demo is to demonstrate how we can start intereacting with services provided by AWS (Specifically [SQS](https://aws.amazon.com/sqs/)). This is done through a technology called [Localstack](https://www.localstack.cloud/) which allows us to emulate AWS services and the [AWS-SDK](https://www.npmjs.com/package/@aws-sdk/client-sqs) library which is used to interact with the SQS queue. (For reference an SQS queue is an Amazon specific term, the more generic term is a Message Queue).
+The purpose of this demo is to demonstrate how we can start intereacting with services provided by AWS (Specifically [SQS](https://aws.amazon.com/sqs/)). We can explore this locally through a technology called [Localstack](https://www.localstack.cloud/) which allows us to emulate AWS services and the [AWS-SDK](https://www.npmjs.com/package/@aws-sdk/client-sqs) library which is used to interact with the SQS queue. (For reference an SQS queue is an Amazon specific term, the more generic term is a Message Queue).
 
 In order to understand what we are building its recommended that you watch this [video](https://www.youtube.com/watch?v=xErwDaOc-Gs) on what a Message Queue is. If videos aren't your style here is an [article](https://www.ibm.com/topics/message-queues) to the same information.
 
