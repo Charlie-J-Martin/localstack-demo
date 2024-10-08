@@ -14,7 +14,7 @@ Before we get started let's talk about the desired end goal of working through t
 - A trade generator - Responsible for generating trades.
 - A trade consumer - Responsible for processing trades.
 
-Decoupling will come with the use of the SQS queue, we will send trades to the queue from the trade generator and the trade consumer will process trades from the queue. The queue here will be a middle man between the two services.
+Decoupling will come with the use of the SQS queue, we will send trades to the queue from the trade generator and will process trades from the queue with the trade consumer. The queue here will be a middle man between the two services.
 
 Rather than having a tightly coupled system like this.
 <img width="804" alt="Screenshot 2024-10-08 at 11 35 17" src="https://github.com/user-attachments/assets/4a1a0a29-3cf1-438a-b82e-2fd7bfc507ef">
