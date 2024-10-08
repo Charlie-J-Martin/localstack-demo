@@ -1,0 +1,65 @@
+export const tradeData = [
+  {
+    id: 'T001',
+    type: 'Buy for cash',
+    cash: 15000,
+    customerAccount: 'PBP12345',
+  },
+  {
+    id: 'T002',
+    type: 'Sell units for cash',
+    units: 100,
+    cash: 7000,
+    customerAccount: 'PBP12346',
+  },
+  {
+    id: 'T003',
+    type: 'Sell for cash',
+    cash: 5000,
+    customerAccount: 'PBP12347',
+  },
+  {
+    id: 'T004',
+    type: 'Buy for cash',
+    cash: 25000,
+    customerAccount: 'PBP12348',
+  },
+  {
+    id: 'T005',
+    type: 'Sell units for cash',
+    units: 50,
+    cash: 3500,
+    customerAccount: 'PBP12349',
+  },
+  {
+    id: 'T006',
+    type: 'Sell for cash',
+    cash: 10000,
+    customerAccount: 'PBP12350',
+  },
+  {
+    id: 'T007',
+    type: 'Buy for cash',
+    cash: 12000,
+    customerAccount: 'PBP12351',
+  },
+  {
+    id: 'T008',
+    type: 'Sell units for cash',
+    units: 200,
+    cash: 14000,
+    customerAccount: 'PBP12352',
+  },
+  {
+    id: 'T009',
+    type: 'Sell for cash',
+    cash: 8000,
+    customerAccount: 'PBP12353',
+  },
+  {
+    id: 'T010',
+    type: 'Buy for cash',
+    cash: 30000,
+    customerAccount: 'PBP12354',
+  },
+];
