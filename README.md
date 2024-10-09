@@ -1,12 +1,12 @@
-# Localstack demo
+# LocalStack demo
 ## Overview
-The purpose of this demo is to showcase how we can start interacting with services provided by AWS (Specifically [SQS](https://aws.amazon.com/sqs/)). We will explore this locally using a technology called [Localstack](https://www.localstack.cloud/) which emulates AWS services, and the [AWS-SDK](https://www.npmjs.com/package/@aws-sdk/client-sqs) library, which is used to interact with the SQS queue. (For reference, SQS is an Amazon-specific term; the more generic term is "Message Queue").
+The purpose of this demo is to showcase how we can start interacting with services provided by AWS (Specifically [SQS](https://aws.amazon.com/sqs/)). We will explore this locally using a technology called [LocalStack](https://www.localstack.cloud/) which emulates AWS services, and the [AWS-SDK](https://www.npmjs.com/package/@aws-sdk/client-sqs) library, which is used to interact with the SQS queue. (For reference, SQS is an Amazon-specific term; the more generic term is "Message Queue").
 
 To better understand what we are building, it is recommended that you watch this [video](https://www.youtube.com/watch?v=xErwDaOc-Gs) explaining what a Message Queue is. If videos aren't your preference, here is an [article](https://www.ibm.com/topics/message-queues) with the same information.
 
 This repository contains code that will allow you to do 4 things:
-- Start a localstack instance via Docker.
-- Deply an SQS queue to Localstack.
+- Start a LocalStack instance via Docker.
+- Deploy an SQS queue to LocalStack.
 - Produce messages and send them to an SQS queue.
 - Consume and process messages from an SQS queue.
 
@@ -28,7 +28,7 @@ and instead we'll instead a decoupled system, like this:
 <img width="804" alt="Screenshot 2024-10-08 at 11 35 37" src="https://github.com/user-attachments/assets/141251ff-dbb9-41b9-b15e-ba77bede92cd">
 
 ## Prerequisites
-- [Docker / Setup](https://docs.docker.com/desktop/install/mac-install/) - This is used to run our localstack instance. 
+- [Docker / Setup](https://docs.docker.com/desktop/install/mac-install/) - This is used to run our LocalStack instance. 
 
 ## Installation
 1. Clone the repository:
@@ -61,8 +61,8 @@ docker-compose up -d
 
 ![Screenshot 2024-10-08 at 11 45 51](https://github.com/user-attachments/assets/1dfe58da-82ca-4658-920b-c6f7ebc3f970)
 
-3. Next, head over to [localstack](https://app.localstack.cloud/sign-in) and sign in (using your GitHub account is the easiest way). Once signed in, you should see some tabs on the left-hand side. Go to `Localstack Instances` and ensure your instance says `running` at the top. This could take some time to appear. (If you want to force your browser to find your LocalStack instance, go to this [URL](https://localhost.localstack.cloud:4566)). 
-Once your instance is running, you should see the `SQS` widget under the `Status` tab. This should say 'available' as it is the only service we've configured localstack to use.
+3. Next, head over to [LocalStack](https://app.localstack.cloud/sign-in) and sign in (using your GitHub account is the easiest way). Once signed in, you should see some tabs on the left-hand side. Go to `LocalStack Instances` and ensure your instance says `running` at the top. This could take some time to appear. (If you want to force your browser to find your LocalStack instance, go to this [URL](https://localhost.localstack.cloud:4566)). 
+Once your instance is running, you should see the `SQS` widget under the `Status` tab. This should say 'available' as it is the only service we've configured LocalStack to use.
 
 ![Screenshot 2024-10-08 at 11 50 11](https://github.com/user-attachments/assets/71d97946-650f-41e5-9809-b4422f67b233)
 
@@ -127,6 +127,6 @@ Terminal
 
 ![Screenshot 2024-10-08 at 12 06 37](https://github.com/user-attachments/assets/06d2ae80-21b5-4c5e-8f6f-e7144392b119)
 
-Localstack
+LocalStack
 
 ![Screenshot 2024-10-08 at 12 07 02](https://github.com/user-attachments/assets/d8ab0484-fb99-4e4d-a705-29718405039a)
