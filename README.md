@@ -27,6 +27,11 @@ and instead we'll instead a decoupled system, like this:
 
 <img width="804" alt="Screenshot 2024-10-08 at 11 35 37" src="https://github.com/user-attachments/assets/141251ff-dbb9-41b9-b15e-ba77bede92cd">
 
+## Video demonstration
+For those who prefer to visually follow along rather than reading the documentation, here is a video demonstration. (Apologies for the poor quality, I had to compress the video to keep it under 100MB.)
+
+https://github.com/user-attachments/assets/344bc21b-7334-4d50-a5a6-d52fba41bdcb
+
 ## Prerequisites
 - [Docker / Setup](https://docs.docker.com/desktop/install/mac-install/) - This is used to run our LocalStack instance. 
 
@@ -108,8 +113,8 @@ This will generate 500 trades and send them to our queue using the `sendMessageT
 ![Screenshot 2024-10-08 at 11 57 59](https://github.com/user-attachments/assets/bdaf4bd1-30e6-4169-b98b-b4bd9cb3cc5b)
 
 9. Now that we have messages in our queue, let's process them. In the `trade-consumer` folder, you will find two files:
-- `consumeMessages.ts` - Responsible for fetching trades from the queue. Each fetched trade is logged into the terminal, and once processed, the message is deleted from the queue. This file also contains a poll queue function which will fetch messages from the queue every second.
-- `main.ts` -  Entry point for consuming trades. This function will poll the queue for messages.
+- `consumeMessages.ts` - Responsible for fetching trades from the queue. Each trade is logged in the terminal, and once processed, the corresponding message is removed from the queue. This file also includes a function that polls the queue every second for new messages.
+- `main.ts` -  Entry point for consuming trades. This function polls the queue for messages.
 
 10. To consume the trades, navigate to the 'trade-consumer' folder
 ```
