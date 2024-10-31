@@ -8,6 +8,7 @@ const main = () => {
   for (let i = 0; i < 500; i++) {
     const message = generateTrades();
     sendMessageToSQS(queueUrl, message);
+    // await new Promise((resolve) => setTimeout(resolve, Math.random() * 2000));
   }
 };
 

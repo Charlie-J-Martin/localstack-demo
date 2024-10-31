@@ -4,8 +4,8 @@ import { sqs } from './sqsClient';
 const params = {
   QueueName: 'localstack-demo-queue',
   Attributes: {
-    DelaySeconds: '60',
-    MessageRetentionPeriod: '86400',
+    // DelaySeconds: '60',
+    // MessageRetentionPeriod: '86400',
   },
 };
 
